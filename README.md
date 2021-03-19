@@ -1,12 +1,53 @@
 # Optimize-Airport-Control
 
+**Current Schedule**
+
+**Calculations + Database Setup**
+
+**John**
+- Research sources of getting Airport Details
+- Planning out tables + creating them
+- Setting up SQL Lite (installing library into project) and pulling airport data
+- Spike: How to get SQL Lite data into Java (for future purposes)
+
+**Justin**
+- Establish a class (data structure) representing each individual state in the model (e.g. S, E, I, or R)
+- Establish a class (data structure) representing the model
+- Establish a class representing airport
+    
+**Example Class**
+Class Airport:{
+    population,
+    Class Model: {
+        S: {}
+        E: {}
+        I: {}
+        R: {}
+    }
+}
+
+- Establish functions to directly manage the number of people in each state (Mainly getter and setter for states)
+- Establish a class representing a disease
+**Examples Class**
+Class Disease:{
+  S to E Rate:
+  E to I Rate:
+}
+
+- Create a transition function from S to E; takes time and the relevant parameters
+- Create a transition function from E to I
+- Create a transition function from I to R
+
+Class transitionFunctions:{
+  S to E Function:
+  E to I Function:
+}
+
 ## IDE
-- Eclipse
 - Intellij
 
 ## DB
 - SQLite: Nice and simple for stand alone application
-- Text Files: Easiest use if data is not complicated
 
 # Meetings
 - Monday and Thursday every week
