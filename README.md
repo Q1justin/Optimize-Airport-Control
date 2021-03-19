@@ -14,34 +14,12 @@
 - Establish a class (data structure) representing each individual state in the model (e.g. S, E, I, or R)
 - Establish a class (data structure) representing the model
 - Establish a class representing airport
-    
-**Example Class**
-Class Airport:{
-    population,
-    Class Model: {
-        S: {}
-        E: {}
-        I: {}
-        R: {}
-    }
-}
-
 - Establish functions to directly manage the number of people in each state (Mainly getter and setter for states)
 - Establish a class representing a disease
-**Examples Class**
-Class Disease:{
-  S to E Rate:
-  E to I Rate:
-}
-
 - Create a transition function from S to E; takes time and the relevant parameters
 - Create a transition function from E to I
 - Create a transition function from I to R
 
-Class transitionFunctions:{
-  S to E Function:
-  E to I Function:
-}
 
 ## IDE
 - Intellij
