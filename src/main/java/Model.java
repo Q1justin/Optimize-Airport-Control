@@ -1,6 +1,7 @@
 public class Model {
 
-    public static void main(String[] args) {
-
+    public Model(String... args){
+        State s = new State("diseas", 0.3);
     }
+
 }
