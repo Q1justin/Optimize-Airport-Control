@@ -1,13 +1,25 @@
 public class Model {
-    State susceptible;
-    State exposed;
-    State infectious;
-    State recovered;
-    public Model(State... args){
-        susceptible = new State("Susceptible", 0.3);
-        exposed = new State("Exposed", 0.3);
-        infectious = new State("Infectious", 0.3);
-        recovered = new State("Recovered", 0.3);
+    public State susceptible;
+    public State exposed;
+    public State infectious;
+    public State recovered;
+
+    public Model(Disease disease){
+        susceptible = new State("susceptible", disease.exposureRate);
+        exposed = new State("exposed", disease.infectionRate);
+        infectious = new State("infectious", disease.recoveryRate);
+        recovered = new State("recovered");
     }
 
+    public int toExposed(){
+        return 0;
+    }
+
+    public int toInfected(){
+        return 0;
+    }
+
+    public int toRecovered(){
+        return 0;
+    }
 }
